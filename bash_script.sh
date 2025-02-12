@@ -3,6 +3,31 @@
 # Author:
 # Purpose:
 
+# https://stackoverflow.com/questions/16654607/using-getopts-inside-a-bash-function  idea
+#while getopts ':cd' opt 
+#do
+#  echo "no. of args: $#"
+#  while (( "$#" )) ; do
+#    echo "\$1 = $1"
+#    if ! [[ $1 =~ ^- ]] ; then
+#    username="$1"
+#    echo "username=${username}"
+#    fi
+#    shift
+#  done
+#    case "$opt" in
+#        c) sudo useradd -m "$username"
+#        break ;;
+#        d) sudo userdel -r "$username"
+#        break ;;
+#        *) echo "Usage: $0 [-c | -d] <USERNAME>";;
+#    esac
+# done
+
+
+
+
+
 # Only use color if not a DUMB terminal.
 [ -t 1 ] || export TERM=dumb
 txtbold=$(tput bold)   # Bold
